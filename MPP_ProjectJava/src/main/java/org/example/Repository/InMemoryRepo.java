@@ -3,6 +3,7 @@ package org.example.Repository;
 import org.example.Domain.Entity;
 
 public interface InMemoryRepo<T extends Entity<Long>>{
+    // TODO add optionals
     T[] getAll();
     T find(Long id);
     T add(T toAdd);
