@@ -1,6 +1,20 @@
 package org.example.Domain;
 
 public class User extends Entity<Long>{
-    private String username;
-    private String password;
+    private final String username;
+    private final String password;
+
+    public User(Long id, String username, String Password) {
+        super(id);
+        this.username = username;
+        this.password = Password;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
 }

@@ -1,11 +1,19 @@
 package org.example.Domain;
 
 public class Concurs extends Entity<Long>{
-    private String proba;
-    private int varstaMin;
-    private int varstaMax;
-    private int numarParticipanti;
+    private final String proba;
+    private final int varstaMin;
+    private final int varstaMax;
+
     private Long[] participanti;
+
+    public Concurs(Long id, String proba, int varstaMin, int varstaMax, Long[] participanti) {
+        super(id);
+        this.proba = proba;
+        this.varstaMin = varstaMin;
+        this.varstaMax = varstaMax;
+        this.participanti = participanti;
+    }
 
     public String getProba() {
         return proba;
@@ -20,7 +28,7 @@ public class Concurs extends Entity<Long>{
     }
 
     public int getNumarParticipanti() {
-        return numarParticipanti;
+        return participanti.length;
     }
 
     public Long[] getParticipanti() {
