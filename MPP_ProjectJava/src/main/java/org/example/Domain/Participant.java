@@ -1,10 +1,12 @@
 package org.example.Domain;
 
+import java.util.List;
+
 public class Participant extends Entity<Long>{
     private final int varsta;
-    private Long[] concursuri;
+    private List<Long> concursuri;
 
-    public Participant(Long id, int varsta, Long[] concursuri) {
+    public Participant(Long id, int varsta, List<Long> concursuri) {
         super(id);
         this.varsta = varsta;
         this.concursuri = concursuri;
@@ -14,11 +16,11 @@ public class Participant extends Entity<Long>{
         return varsta;
     }
 
-    public Long[] getConcursuri() {
+    public List<Long> getConcursuri() {
         return concursuri;
     }
 
-    public void setConcursuri(Long[] concursuri) {
+    public void setConcursuri(List<Long> concursuri) {
         this.concursuri = concursuri;
     }
 }

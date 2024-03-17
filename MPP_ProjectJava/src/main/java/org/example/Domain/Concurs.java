@@ -1,13 +1,15 @@
 package org.example.Domain;
 
+import java.util.List;
+
 public class Concurs extends Entity<Long>{
     private final String proba;
     private final int varstaMin;
     private final int varstaMax;
 
-    private Long[] participanti;
+    private List<Long> participanti;
 
-    public Concurs(Long id, String proba, int varstaMin, int varstaMax, Long[] participanti) {
+    public Concurs(Long id, String proba, int varstaMin, int varstaMax, List<Long> participanti) {
         super(id);
         this.proba = proba;
         this.varstaMin = varstaMin;
@@ -28,14 +30,14 @@ public class Concurs extends Entity<Long>{
     }
 
     public int getNumarParticipanti() {
-        return participanti.length;
+        return participanti.size();
     }
 
-    public Long[] getParticipanti() {
+    public List<Long> getParticipanti() {
         return participanti;
     }
 
-    public void setParticipanti(Long[] participanti) {
+    public void setParticipanti(List<Long> participanti) {
         this.participanti = participanti;
     }
 }
