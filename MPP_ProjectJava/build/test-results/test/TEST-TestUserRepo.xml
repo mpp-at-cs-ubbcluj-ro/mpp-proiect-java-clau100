@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestUserRepo" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-03-18T15:29:29" hostname="TPLNV" time="0.36">
+  <properties/>
+  <testcase name="Find Test" classname="TestUserRepo" time="0.017"/>
+  <testcase name="GetAll Test" classname="TestUserRepo" time="0.03"/>
+  <testcase name="Login Test" classname="TestUserRepo" time="0.309"/>
+  <system-out><![CDATA[18 Mar 2024 17:29:29,056 INFO  org.example.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:29,058 TRACE org.example.Repository.UserRepo 47 find - Enter
+18 Mar 2024 17:29:29,060 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:29,060 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:29,061 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:29,064 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@36ac8a63)
+18 Mar 2024 17:29:29,066 TRACE org.example.Repository.UserRepo 55 find - Exit
+18 Mar 2024 17:29:29,075 INFO  org.example.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:29,076 TRACE org.example.Repository.UserRepo 26 getAll - Enter
+18 Mar 2024 17:29:29,077 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:29,078 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:29,078 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:29,084 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@251f7d26)
+18 Mar 2024 17:29:29,099 TRACE org.example.Repository.UserRepo 41 getAll - Exit
+18 Mar 2024 17:29:29,105 INFO  org.example.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:29,107 TRACE org.example.Repository.UserRepo 83 CheckUser - Enter
+18 Mar 2024 17:29:29,112 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:29,118 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:29,119 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:29,122 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@52d10fb8)
+18 Mar 2024 17:29:29,321 INFO  org.example.Repository.UserRepo 86 CheckUser - ubb123|$31$16$H0unLxULam_SNiah5PfGrQa48x-cwZXVBfY9R_m1j9Q
+18 Mar 2024 17:29:29,412 TRACE org.example.Repository.UserRepo 94 CheckUser - Exit
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

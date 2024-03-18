@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class TestConcursRepo</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class TestConcursRepo</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; TestConcursRepo</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.113s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Find Test</td>
+<td class="success">TestFind()</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Find All for age Test</td>
+<td class="success">TestFindForAge()</td>
+<td class="success">1.088s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GetAll Test</td>
+<td class="success">TestGetAll()</td>
+<td class="success">0.013s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>18 Mar 2024 17:29:28,751 INFO  org.example.Repository.ConcursRepo 20 &lt;init&gt; - Initializing new ConcursRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:28,770 TRACE org.example.Repository.ConcursRepo 85 FindAllForAge - Enter
+18 Mar 2024 17:29:28,771 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:28,771 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:28,772 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:28,920 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@384fc774)
+18 Mar 2024 17:29:28,943 INFO  org.example.Repository.ConcursRepo 20 &lt;init&gt; - Initializing new ConcursRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:28,944 TRACE org.example.Repository.ConcursRepo 47 find - Enter
+18 Mar 2024 17:29:28,944 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:28,945 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:28,947 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:28,951 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@70eecdc2)
+18 Mar 2024 17:29:28,952 TRACE org.example.Repository.ConcursRepo 56 find - Exit
+18 Mar 2024 17:29:28,959 INFO  org.example.Repository.ConcursRepo 20 &lt;init&gt; - Initializing new ConcursRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:28,960 TRACE org.example.Repository.ConcursRepo 25 getAll - Enter
+18 Mar 2024 17:29:28,961 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:28,962 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:28,963 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:28,966 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7db0565c)
+18 Mar 2024 17:29:28,967 TRACE org.example.Repository.ConcursRepo 41 getAll - Exit
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.6</a> at Mar 18, 2024, 5:29:29 PM</p>
+</div>
+</div>
+</body>
+</html>

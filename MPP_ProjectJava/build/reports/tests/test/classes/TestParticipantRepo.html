@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class TestParticipantRepo</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class TestParticipantRepo</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; TestParticipantRepo</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.060s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Find Test</td>
+<td class="success">TestFind()</td>
+<td class="success">0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Find From List Test</td>
+<td class="success">TestFindFromList()</td>
+<td class="success">0.020s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GetAll Test</td>
+<td class="success">TestGetAll()</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>18 Mar 2024 17:29:28,981 INFO  org.example.Repository.ParticipantRepo 20 &lt;init&gt; - Initializing new ParticipantRepo with properties :{jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:28,982 TRACE org.example.Repository.ParticipantRepo 45 find - Enter
+18 Mar 2024 17:29:28,984 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:28,984 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:28,988 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:28,992 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@29539e36)
+18 Mar 2024 17:29:28,995 TRACE org.example.Repository.ParticipantRepo 52 find - Exit
+18 Mar 2024 17:29:29,004 INFO  org.example.Repository.ParticipantRepo 20 &lt;init&gt; - Initializing new ParticipantRepo with properties :{jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:29,004 TRACE org.example.Repository.ParticipantRepo 25 getAll - Enter
+18 Mar 2024 17:29:29,009 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:29,010 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:29,011 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:29,014 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@669253b7)
+18 Mar 2024 17:29:29,020 TRACE org.example.Repository.ParticipantRepo 39 getAll - Exit
+18 Mar 2024 17:29:29,030 INFO  org.example.Repository.ParticipantRepo 20 &lt;init&gt; - Initializing new ParticipantRepo with properties :{jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:29,031 TRACE org.example.Repository.ParticipantRepo 80 FindAllFromList - Enter
+18 Mar 2024 17:29:29,033 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:29,034 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:29,035 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:29,041 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3dddbe65)
+18 Mar 2024 17:29:29,045 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:29,045 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3dddbe65)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.6</a> at Mar 18, 2024, 5:29:29 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class TestUserRepo</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class TestUserRepo</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; TestUserRepo</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.356s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Find Test</td>
+<td class="success">TestFind()</td>
+<td class="success">0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GetAll Test</td>
+<td class="success">TestGetAll()</td>
+<td class="success">0.030s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Login Test</td>
+<td class="success">TestLogin()</td>
+<td class="success">0.309s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>18 Mar 2024 17:29:29,056 INFO  org.example.Repository.UserRepo 21 &lt;init&gt; - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:29,058 TRACE org.example.Repository.UserRepo 47 find - Enter
+18 Mar 2024 17:29:29,060 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:29,060 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:29,061 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:29,064 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@36ac8a63)
+18 Mar 2024 17:29:29,066 TRACE org.example.Repository.UserRepo 55 find - Exit
+18 Mar 2024 17:29:29,075 INFO  org.example.Repository.UserRepo 21 &lt;init&gt; - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:29,076 TRACE org.example.Repository.UserRepo 26 getAll - Enter
+18 Mar 2024 17:29:29,077 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:29,078 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:29,078 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:29,084 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@251f7d26)
+18 Mar 2024 17:29:29,099 TRACE org.example.Repository.UserRepo 41 getAll - Exit
+18 Mar 2024 17:29:29,105 INFO  org.example.Repository.UserRepo 21 &lt;init&gt; - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:29,107 TRACE org.example.Repository.UserRepo 83 CheckUser - Enter
+18 Mar 2024 17:29:29,112 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:29,118 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:29,119 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:29,122 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@52d10fb8)
+18 Mar 2024 17:29:29,321 INFO  org.example.Repository.UserRepo 86 CheckUser - ubb123|$31$16$H0unLxULam_SNiah5PfGrQa48x-cwZXVBfY9R_m1j9Q
+18 Mar 2024 17:29:29,412 TRACE org.example.Repository.UserRepo 94 CheckUser - Exit
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.6</a> at Mar 18, 2024, 5:29:29 PM</p>
+</div>
+</div>
+</body>
+</html>

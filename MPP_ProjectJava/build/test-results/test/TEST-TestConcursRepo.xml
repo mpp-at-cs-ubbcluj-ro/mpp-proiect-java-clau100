@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestConcursRepo" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-03-18T15:29:27" hostname="TPLNV" time="1.119">
+  <properties/>
+  <testcase name="Find All for age Test" classname="TestConcursRepo" time="1.088"/>
+  <testcase name="Find Test" classname="TestConcursRepo" time="0.012"/>
+  <testcase name="GetAll Test" classname="TestConcursRepo" time="0.013"/>
+  <system-out><![CDATA[18 Mar 2024 17:29:28,751 INFO  org.example.Repository.ConcursRepo 20 <init> - Initializing new ConcursRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:28,770 TRACE org.example.Repository.ConcursRepo 85 FindAllForAge - Enter
+18 Mar 2024 17:29:28,771 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:28,771 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:28,772 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:28,920 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@384fc774)
+18 Mar 2024 17:29:28,943 INFO  org.example.Repository.ConcursRepo 20 <init> - Initializing new ConcursRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:28,944 TRACE org.example.Repository.ConcursRepo 47 find - Enter
+18 Mar 2024 17:29:28,944 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:28,945 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:28,947 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:28,951 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@70eecdc2)
+18 Mar 2024 17:29:28,952 TRACE org.example.Repository.ConcursRepo 56 find - Exit
+18 Mar 2024 17:29:28,959 INFO  org.example.Repository.ConcursRepo 20 <init> - Initializing new ConcursRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite}
+18 Mar 2024 17:29:28,960 TRACE org.example.Repository.ConcursRepo 25 getAll - Enter
+18 Mar 2024 17:29:28,961 TRACE org.example.Repository.JDBCUtils 30 getConnection - Enter
+18 Mar 2024 17:29:28,962 TRACE org.example.Repository.JDBCUtils 18 getNewConnection - Enter
+18 Mar 2024 17:29:28,963 INFO  org.example.Repository.JDBCUtils 21 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/Testing.sqlite
+18 Mar 2024 17:29:28,966 TRACE org.example.Repository.JDBCUtils 38 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7db0565c)
+18 Mar 2024 17:29:28,967 TRACE org.example.Repository.ConcursRepo 41 getAll - Exit
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>

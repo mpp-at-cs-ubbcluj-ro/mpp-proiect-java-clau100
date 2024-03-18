@@ -14,7 +14,7 @@ public class Main {
             System.out.println("Cannot find bd.config "+e);
         }
         UserRepo users = new UserRepo(props);
-        users.getAll().forEach(user -> System.out.println(user.getId() + "|" + user.getUsername() + "|" + user.getPassword()));
+        users.CheckUser("george", "ubb122");
 
         System.out.println("Hello world!");
     }

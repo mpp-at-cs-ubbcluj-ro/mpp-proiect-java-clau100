@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Properties;
 
-public class ParticipantRepo implements IRepo<Participant, Long>{
+public class ParticipantRepo implements IRepo<Participant, Long>, IParticipantRepo{
     private final JDBCUtils jdbcUtils;
     private static final Logger logger = LogManager.getLogger();
     public ParticipantRepo(Properties props){
@@ -73,5 +73,28 @@ public class ParticipantRepo implements IRepo<Participant, Long>{
     @Override
     public Optional<Participant> update(Participant toUpdate) {
         return Optional.empty();
+    }
+
+    @Override
+    public List<Participant> FindAllFromList(List<Long> participantIDs) {
+        logger.traceEntry();
+        List<Participant> lst = new LinkedList<>();
+        participantIDs.forEach(p -> {
+            Connection con = jdbcUtils.getConnection();
+            try(PreparedStatement preStm = con.prepareStatement("SELECT * FROM Participant WHERE id = ?")){
+                preStm.setLong(1, p);
+                try(ResultSet result = preStm.executeQuery()){
+                    if(result.next()){
+                        int varsta = result.getInt("Varsta");
+                        lst.add(new Participant(p, varsta, new LinkedList<>()));
+                        return;
+                    }
+                    logger.error("Could not find Participant with id="+p);
+                }
+            }catch(SQLException e){
+                logger.error(e);
+            }
+        });
+        return lst;
     }
 }

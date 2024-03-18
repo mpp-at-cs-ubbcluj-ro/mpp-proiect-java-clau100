@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Properties;
 
-public class UserRepo implements IRepo<User, Long>{
+public class UserRepo implements IRepo<User, Long>, IUserRepo{
     private final JDBCUtils jdbcUtils;
 
     private static final Logger logger = LogManager.getLogger();
@@ -76,5 +76,33 @@ public class UserRepo implements IRepo<User, Long>{
     @Override
     public Optional<User> update(User toUpdate) {
         return Optional.empty();
+    }
+
+    @Override
+    public Boolean CheckUser(String username, String password) {
+        logger.traceEntry();
+        Connection con = jdbcUtils.getConnection();
+        SecurePasswordHasher hasher = new SecurePasswordHasher();
+        logger.info(password + "|" + hasher.hash(password.toCharArray()));
+        try(PreparedStatement preStm = con.prepareStatement("SELECT * FROM User where Username = ?")){
+            preStm.setString(1, username);
+            try(ResultSet result = preStm.executeQuery()){
+                if(result.next()){
+                    String stored_password = result.getString("Password");
+                    boolean ok = hasher.authenticate(password.toCharArray(), stored_password);
+                    if(ok){
+                        logger.traceExit();
+                        return true;
+                    }
+                    logger.error("Wrong password!");
+                    return false;
+                }
+                logger.error("Could not find user: "+username);
+                return false;
+            }
+        }catch(SQLException e){
+            logger.error(e);
+            return false;
+        }
     }
 }
