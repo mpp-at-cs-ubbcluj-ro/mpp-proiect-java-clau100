@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="465.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mpp_ui.UserView">
+   <children>
+      <TableView fx:id="concursuri" layoutX="37.0" layoutY="62.0" prefHeight="251.0" prefWidth="299.0" />
+   </children>
+</AnchorPane>

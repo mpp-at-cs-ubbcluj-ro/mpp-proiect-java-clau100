@@ -1,0 +1,129 @@
+29 Mar 2024 23:01:30,140 TRACE org.example.mpp_ui.LoginView 17 onLoginButtonClick - Enter
+29 Mar 2024 23:01:30,146 TRACE org.example.mpp_ui.LoginView 19 onLoginButtonClick - Exit
+29 Mar 2024 23:01:32,200 TRACE org.example.mpp_ui.LoginView 17 onLoginButtonClick - Enter
+29 Mar 2024 23:01:32,200 TRACE org.example.mpp_ui.LoginView 19 onLoginButtonClick - Exit
+29 Mar 2024 23:08:39,247 INFO  org.example.mpp_ui.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+29 Mar 2024 23:24:27,900 INFO  org.example.mpp_ui.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+29 Mar 2024 23:24:31,400 TRACE org.example.mpp_ui.LoginView 32 onLoginButtonClick - Enter
+29 Mar 2024 23:24:31,401 TRACE org.example.mpp_ui.Repository.UserRepo 83 CheckUser - Enter
+29 Mar 2024 23:24:31,402 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+29 Mar 2024 23:24:31,402 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+29 Mar 2024 23:24:31,402 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+29 Mar 2024 23:24:31,608 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@22d2ed0d)
+29 Mar 2024 23:24:31,873 INFO  org.example.mpp_ui.Repository.UserRepo 86 CheckUser - |$31$16$rJt-feRWRYlXuo9LyAPzGT6ZafPLBx6-t02bG5CHu7o
+29 Mar 2024 23:24:31,882 ERROR org.example.mpp_ui.Repository.UserRepo 100 CheckUser - Could not find user: 
+29 Mar 2024 23:24:31,883 TRACE org.example.mpp_ui.LoginView 39 onLoginButtonClick - Exit
+29 Mar 2024 23:24:43,385 TRACE org.example.mpp_ui.LoginView 32 onLoginButtonClick - Enter
+29 Mar 2024 23:24:43,385 TRACE org.example.mpp_ui.Repository.UserRepo 83 CheckUser - Enter
+29 Mar 2024 23:24:43,386 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+29 Mar 2024 23:24:43,386 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@22d2ed0d)
+29 Mar 2024 23:24:43,475 INFO  org.example.mpp_ui.Repository.UserRepo 86 CheckUser - ubb123|$31$16$rgSYzXI52X9OEEgUQ34INLSVWvh3Hxy9jYsVaUV4pUc
+29 Mar 2024 23:24:43,562 TRACE org.example.mpp_ui.Repository.UserRepo 94 CheckUser - Exit
+29 Mar 2024 23:24:43,563 TRACE org.example.mpp_ui.LoginView 39 onLoginButtonClick - Exit
+30 Mar 2024 00:03:00,032 INFO  org.example.mpp_ui.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:21:47,441 INFO  org.example.mpp_ui.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:21:53,003 TRACE org.example.mpp_ui.LoginView 32 onLoginButtonClick - Enter
+30 Mar 2024 00:21:53,004 TRACE org.example.mpp_ui.Repository.UserRepo 83 CheckUser - Enter
+30 Mar 2024 00:21:53,005 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+30 Mar 2024 00:21:53,005 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+30 Mar 2024 00:21:53,005 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+30 Mar 2024 00:21:53,219 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@78e454af)
+30 Mar 2024 00:21:53,507 INFO  org.example.mpp_ui.Repository.UserRepo 86 CheckUser - ubb123|$31$16$DsX4Zp4RJ8E1ZQhOkI3EsiJqSp2Rd4pGgINsQfHSwQo
+30 Mar 2024 00:21:53,594 TRACE org.example.mpp_ui.Repository.UserRepo 94 CheckUser - Exit
+30 Mar 2024 00:21:53,596 TRACE org.example.mpp_ui.LoginView 39 onLoginButtonClick - Exit
+30 Mar 2024 00:26:48,351 INFO  org.example.mpp_ui.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:26:53,795 TRACE org.example.mpp_ui.LoginView 35 onLoginButtonClick - Enter
+30 Mar 2024 00:26:53,797 TRACE org.example.mpp_ui.Repository.UserRepo 83 CheckUser - Enter
+30 Mar 2024 00:26:53,797 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+30 Mar 2024 00:26:53,798 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+30 Mar 2024 00:26:53,798 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+30 Mar 2024 00:26:53,992 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3710f05f)
+30 Mar 2024 00:26:54,246 INFO  org.example.mpp_ui.Repository.UserRepo 86 CheckUser - ubb123|$31$16$OFNQ_4szwecUxRuZqHoMU4YVaJAfMfug5tv6O1tbL78
+30 Mar 2024 00:26:54,332 TRACE org.example.mpp_ui.Repository.UserRepo 94 CheckUser - Exit
+30 Mar 2024 00:26:54,333 TRACE org.example.mpp_ui.LoginView 42 onLoginButtonClick - Exit
+30 Mar 2024 00:26:54,378 INFO  org.example.mpp_ui.Repository.ConcursRepo 18 <init> - Initializing new ConcursRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:27:49,556 INFO  org.example.mpp_ui.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:27:56,507 TRACE org.example.mpp_ui.LoginView 35 onLoginButtonClick - Enter
+30 Mar 2024 00:27:56,508 TRACE org.example.mpp_ui.Repository.UserRepo 83 CheckUser - Enter
+30 Mar 2024 00:27:56,508 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+30 Mar 2024 00:27:56,509 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+30 Mar 2024 00:27:56,509 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+30 Mar 2024 00:27:56,682 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@c7034a8)
+30 Mar 2024 00:27:56,959 INFO  org.example.mpp_ui.Repository.UserRepo 86 CheckUser - ubb123|$31$16$9CD8_qu_54ZkILzVIZgVeMwD8A2GTW5RDYE92saunr0
+30 Mar 2024 00:27:57,043 TRACE org.example.mpp_ui.Repository.UserRepo 94 CheckUser - Exit
+30 Mar 2024 00:27:57,044 TRACE org.example.mpp_ui.LoginView 42 onLoginButtonClick - Exit
+30 Mar 2024 00:27:57,072 INFO  org.example.mpp_ui.Repository.ConcursRepo 18 <init> - Initializing new ConcursRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:28:18,577 INFO  org.example.mpp_ui.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:28:23,062 TRACE org.example.mpp_ui.LoginView 35 onLoginButtonClick - Enter
+30 Mar 2024 00:28:23,062 TRACE org.example.mpp_ui.Repository.UserRepo 83 CheckUser - Enter
+30 Mar 2024 00:28:23,063 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+30 Mar 2024 00:28:23,063 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+30 Mar 2024 00:28:23,063 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+30 Mar 2024 00:28:23,220 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6cf30917)
+30 Mar 2024 00:28:23,467 INFO  org.example.mpp_ui.Repository.UserRepo 86 CheckUser - ubb123|$31$16$g25YDc9YNiAfqj8aD57z5kcO9t5EFQIPIoGxUMIZ_Tk
+30 Mar 2024 00:28:23,567 TRACE org.example.mpp_ui.Repository.UserRepo 94 CheckUser - Exit
+30 Mar 2024 00:28:23,569 TRACE org.example.mpp_ui.LoginView 42 onLoginButtonClick - Exit
+30 Mar 2024 00:28:23,606 INFO  org.example.mpp_ui.Repository.ConcursRepo 18 <init> - Initializing new ConcursRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:28:23,607 TRACE org.example.mpp_ui.UserView 37 reloadListViews - Enter
+30 Mar 2024 00:28:23,616 TRACE org.example.mpp_ui.Repository.ConcursRepo 23 getAll - Enter
+30 Mar 2024 00:28:23,617 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+30 Mar 2024 00:28:23,617 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+30 Mar 2024 00:28:23,617 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+30 Mar 2024 00:28:23,619 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@378b27ea)
+30 Mar 2024 00:28:23,622 TRACE org.example.mpp_ui.Repository.ConcursRepo 55 getAll - Exit
+30 Mar 2024 00:39:42,722 INFO  org.example.mpp_ui.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:39:47,660 TRACE org.example.mpp_ui.LoginView 35 onLoginButtonClick - Enter
+30 Mar 2024 00:39:47,661 TRACE org.example.mpp_ui.Repository.UserRepo 83 CheckUser - Enter
+30 Mar 2024 00:39:47,661 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+30 Mar 2024 00:39:47,661 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+30 Mar 2024 00:39:47,662 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+30 Mar 2024 00:39:47,823 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3dd63650)
+30 Mar 2024 00:39:48,090 INFO  org.example.mpp_ui.Repository.UserRepo 86 CheckUser - ubb123|$31$16$ZNburl5RB79pcYnj7kHxpduxhkB3hd0lFBZesMXJvyU
+30 Mar 2024 00:39:48,181 TRACE org.example.mpp_ui.Repository.UserRepo 94 CheckUser - Exit
+30 Mar 2024 00:39:48,182 TRACE org.example.mpp_ui.LoginView 42 onLoginButtonClick - Exit
+30 Mar 2024 00:39:48,211 INFO  org.example.mpp_ui.Repository.ConcursRepo 18 <init> - Initializing new ConcursRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:39:48,211 TRACE org.example.mpp_ui.UserView 40 reloadListViews - Enter
+30 Mar 2024 00:39:48,220 TRACE org.example.mpp_ui.Repository.ConcursRepo 23 getAll - Enter
+30 Mar 2024 00:39:48,220 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+30 Mar 2024 00:39:48,220 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+30 Mar 2024 00:39:48,221 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+30 Mar 2024 00:39:48,222 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4e1760a6)
+30 Mar 2024 00:39:48,224 TRACE org.example.mpp_ui.Repository.ConcursRepo 55 getAll - Exit
+30 Mar 2024 00:41:19,451 INFO  org.example.mpp_ui.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:41:23,604 TRACE org.example.mpp_ui.LoginView 35 onLoginButtonClick - Enter
+30 Mar 2024 00:41:23,605 TRACE org.example.mpp_ui.Repository.UserRepo 83 CheckUser - Enter
+30 Mar 2024 00:41:23,605 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+30 Mar 2024 00:41:23,606 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+30 Mar 2024 00:41:23,606 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+30 Mar 2024 00:41:23,770 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2e00b7eb)
+30 Mar 2024 00:41:24,035 INFO  org.example.mpp_ui.Repository.UserRepo 86 CheckUser - ubb123|$31$16$enm9a5oz2PPPVo8Tt4-QyulOf9AcOWI6O0VdPMmBul0
+30 Mar 2024 00:41:24,111 TRACE org.example.mpp_ui.Repository.UserRepo 94 CheckUser - Exit
+30 Mar 2024 00:41:24,111 TRACE org.example.mpp_ui.LoginView 42 onLoginButtonClick - Exit
+30 Mar 2024 00:41:24,140 INFO  org.example.mpp_ui.Repository.ConcursRepo 18 <init> - Initializing new ConcursRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:41:24,141 TRACE org.example.mpp_ui.UserView 40 reloadListViews - Enter
+30 Mar 2024 00:41:24,149 TRACE org.example.mpp_ui.Repository.ConcursRepo 23 getAll - Enter
+30 Mar 2024 00:41:24,149 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+30 Mar 2024 00:41:24,150 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+30 Mar 2024 00:41:24,150 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+30 Mar 2024 00:41:24,151 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7a906b68)
+30 Mar 2024 00:41:24,154 TRACE org.example.mpp_ui.Repository.ConcursRepo 55 getAll - Exit
+30 Mar 2024 00:41:24,155 TRACE org.example.mpp_ui.UserView 56 reloadListViews - Exit
+30 Mar 2024 00:42:28,264 INFO  org.example.mpp_ui.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:42:34,048 TRACE org.example.mpp_ui.LoginView 35 onLoginButtonClick - Enter
+30 Mar 2024 00:42:34,049 TRACE org.example.mpp_ui.Repository.UserRepo 83 CheckUser - Enter
+30 Mar 2024 00:42:34,049 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+30 Mar 2024 00:42:34,049 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+30 Mar 2024 00:42:34,049 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+30 Mar 2024 00:42:34,213 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@315122f0)
+30 Mar 2024 00:42:34,443 INFO  org.example.mpp_ui.Repository.UserRepo 86 CheckUser - ubb123|$31$16$P6EyWGBbqZDQjIzxQ1BHhe7N_qhKDCv0w72_SzLANGY
+30 Mar 2024 00:42:34,525 TRACE org.example.mpp_ui.Repository.UserRepo 94 CheckUser - Exit
+30 Mar 2024 00:42:34,526 TRACE org.example.mpp_ui.LoginView 42 onLoginButtonClick - Exit
+30 Mar 2024 00:42:34,555 INFO  org.example.mpp_ui.Repository.ConcursRepo 18 <init> - Initializing new ConcursRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+30 Mar 2024 00:42:34,556 TRACE org.example.mpp_ui.UserView 40 reloadListViews - Enter
+30 Mar 2024 00:42:34,564 TRACE org.example.mpp_ui.Repository.ConcursRepo 23 getAll - Enter
+30 Mar 2024 00:42:34,565 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+30 Mar 2024 00:42:34,565 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+30 Mar 2024 00:42:34,565 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+30 Mar 2024 00:42:34,568 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1400be49)
+30 Mar 2024 00:42:34,570 TRACE org.example.mpp_ui.Repository.ConcursRepo 57 getAll - Exit
+30 Mar 2024 00:42:34,572 TRACE org.example.mpp_ui.UserView 56 reloadListViews - Exit
