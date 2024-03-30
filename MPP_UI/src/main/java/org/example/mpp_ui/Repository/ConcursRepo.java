@@ -62,7 +62,7 @@ public class ConcursRepo implements IRepo<Concurs, Long>, IConcursRepo {
     public Optional<Concurs> find(Long id) {
         logger.traceEntry();
         Connection con = jdbcUtils.getConnection();
-        try(PreparedStatement preStm = con.prepareStatement("SELECT * FROM Concurs c WHERE id = ? LEFT JOIN Inscrieri i on c.id = i.concurs")){
+        try(PreparedStatement preStm = con.prepareStatement("SELECT * FROM Concurs c LEFT JOIN Inscrieri i on c.id = i.concurs WHERE id = ?")){
             preStm.setLong(1, id);
             try(ResultSet result = preStm.executeQuery()){
                 Concurs c = null;
@@ -127,5 +127,22 @@ public class ConcursRepo implements IRepo<Concurs, Long>, IConcursRepo {
             logger.error(e);
         }
         return lst;
+    }
+
+    public void Enroll(long participantId, long concursId){
+        logger.traceEntry();
+        Connection con = jdbcUtils.getConnection();
+        try(PreparedStatement preStm = con.prepareStatement("INSERT INTO Inscrieri(concurs, participant) VALUES (?, ?)")){
+            preStm.setLong(1, concursId);
+            preStm.setLong(2, participantId);
+            int result = preStm.executeUpdate();
+            if(result <= 0){
+                throw new SQLException("Could not insert!");
+            }
+        }catch(SQLException e){
+            logger.error(e);
+            return;
+        }
+        logger.info("ENROLLED!");
     }
 }

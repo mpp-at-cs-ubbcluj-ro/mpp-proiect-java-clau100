@@ -30,7 +30,8 @@ public class ParticipantRepo implements IRepo<Participant, Long>, IParticipantRe
                 while(result.next()){
                     long id = result.getLong("id");
                     int varsta = result.getInt("Varsta");
-                    lst.add(new Participant(id, varsta, new LinkedList<>()));
+                    String nume = result.getString("Nume");
+                    lst.add(new Participant(id, varsta, nume, new LinkedList<>()));
                 }
             }
         }catch(SQLException e){
@@ -44,13 +45,14 @@ public class ParticipantRepo implements IRepo<Participant, Long>, IParticipantRe
     public Optional<Participant> find(Long id) {
         logger.traceEntry();
         Connection con = jdbcUtils.getConnection();
-        try(PreparedStatement preStm = con.prepareStatement("SELECT * FROM PARTICIPANT WHERE id = ?")){
+        try(PreparedStatement preStm = con.prepareStatement("SELECT * FROM Participant WHERE id = ?")){
             preStm.setLong(1, id);
             try(ResultSet result = preStm.executeQuery()){
                 if(result.next()){
                     int varsta = result.getInt("Varsta");
+                    String nume = result.getString("Nume");
                     logger.traceExit();
-                    return Optional.of(new Participant(id, varsta, new LinkedList<>()));
+                    return Optional.of(new Participant(id, varsta, nume, new LinkedList<>()));
                 }
             }
         }catch(SQLException e){
@@ -62,6 +64,20 @@ public class ParticipantRepo implements IRepo<Participant, Long>, IParticipantRe
 
     @Override
     public Optional<Participant> add(Participant toAdd) {
+        logger.traceEntry();
+        Connection con = jdbcUtils.getConnection();
+        try(PreparedStatement preStm = con.prepareStatement("INSERT INTO Participant(Nume, Varsta) VALUES (?, ?)")){
+            preStm.setString(1, toAdd.getNume());
+            preStm.setInt(2, toAdd.getVarsta());
+            int result = preStm.executeUpdate();
+            if(result <= 0){
+                logger.warn("Could not add Participant!");
+                return Optional.of(toAdd);
+            }
+        }catch(SQLException e){
+            logger.error(e);
+        }
+
         return Optional.empty();
     }
 
@@ -80,21 +96,11 @@ public class ParticipantRepo implements IRepo<Participant, Long>, IParticipantRe
         logger.traceEntry();
         List<Participant> lst = new LinkedList<>();
         participantIDs.forEach(p -> {
-            Connection con = jdbcUtils.getConnection();
-            try(PreparedStatement preStm = con.prepareStatement("SELECT * FROM Participant WHERE id = ?")){
-                preStm.setLong(1, p);
-                try(ResultSet result = preStm.executeQuery()){
-                    if(result.next()){
-                        int varsta = result.getInt("Varsta");
-                        lst.add(new Participant(p, varsta, new LinkedList<>()));
-                        return;
-                    }
-                    logger.error("Could not find Participant with id="+p);
-                }
-            }catch(SQLException e){
-                logger.error(e);
-            }
+            logger.info("Trying to find Participant with id="+p);
+            Optional<Participant> f = find(p);
+            f.ifPresent(lst::add);
         });
+        logger.traceExit();
         return lst;
     }
 }

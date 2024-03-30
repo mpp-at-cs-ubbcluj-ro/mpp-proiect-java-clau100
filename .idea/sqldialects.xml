@@ -5,5 +5,6 @@
     <file url="file://$PROJECT_DIR$/MPP_ProjectJava/src/main/java/org/example/Repository/ParticipantRepo.java" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/MPP_ProjectJava/src/main/java/org/example/Repository/UserRepo.java" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/MPP_UI/src/main/java/org/example/mpp_ui/Repository/ConcursRepo.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/MPP_UI/src/main/java/org/example/mpp_ui/Repository/ParticipantRepo.java" dialect="GenericSQL" />
   </component>
 </project>
