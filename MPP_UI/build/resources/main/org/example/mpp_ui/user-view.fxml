@@ -3,11 +3,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="465.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mpp_ui.UserView">
+<AnchorPane prefHeight="465.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mpp_ui.UserView">
    <children>
       <TableView fx:id="concursuri" layoutX="37.0" layoutY="62.0" prefHeight="251.0" prefWidth="299.0" />
       <TableView fx:id="participanti" layoutX="356.0" layoutY="62.0" prefHeight="251.0" prefWidth="223.0" />
-      <TableView fx:id="totiParticipanti" layoutX="596.0" layoutY="62.0" prefHeight="251.0" prefWidth="223.0" />
+      <TableView fx:id="totiParticipanti" layoutX="596.0" layoutY="62.0" prefHeight="251.0" prefWidth="180.0" />
       <Button fx:id="EnrollButton" layoutX="596.0" layoutY="337.0" mnemonicParsing="false" onAction="#EnrollClicked" text="Inscrie" />
       <TextField fx:id="numeText" layoutX="37.0" layoutY="350.0" />
       <TextField fx:id="varstaText" layoutX="37.0" layoutY="404.0" />

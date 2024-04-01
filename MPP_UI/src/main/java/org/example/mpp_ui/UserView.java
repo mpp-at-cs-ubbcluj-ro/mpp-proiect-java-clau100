@@ -13,8 +13,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.mpp_ui.Domain.Concurs;
 import org.example.mpp_ui.Domain.Participant;
-import org.example.mpp_ui.Repository.ConcursRepo;
-import org.example.mpp_ui.Repository.ParticipantRepo;
+import org.example.mpp_ui.Service.ConcursService;
+import org.example.mpp_ui.Service.ParticipantService;
 
 import java.io.IOException;
 import java.util.LinkedList;
@@ -38,9 +38,8 @@ public class UserView {
     @FXML
     private TextField varstaText;
     private static final Logger logger = LogManager.getLogger();
-
-    private ConcursRepo concursRepo;
-    private ParticipantRepo participantRepo;
+    private ConcursService concursService;
+    private ParticipantService participantService;
 
     public void initialize(){
         Properties props=new Properties();
@@ -49,8 +48,8 @@ public class UserView {
         } catch (IOException e) {
             System.out.println("Cannot find bd.config "+e);
         }
-        concursRepo = new ConcursRepo(props);
-        participantRepo = new ParticipantRepo(props);
+        concursService = new ConcursService(props);
+        participantService = new ParticipantService(props);
 
         concursuri.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         participanti.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
@@ -63,19 +62,17 @@ public class UserView {
                 return;
             }
             System.out.println("Selected: " + newSelection.getId());
-            Optional<Concurs> opt = concursRepo.find(newSelection.getId());
+            Optional<Concurs> opt = concursService.find(newSelection.getId());
             if (opt.isEmpty()){
                 return;
             }
             Concurs c = opt.get();
-            List<Participant> participants = participantRepo.FindAllFromList(c.getParticipanti());
+            List<Participant> participants = participantService.findAllFromList(c.getParticipanti());
 
             ObservableList<Participant> lst = FXCollections.observableArrayList();
 
             lst.addAll(participants);
-            lst.forEach(p ->{
-                System.out.println(p.getNume());
-            });
+            lst.forEach(p -> System.out.println(p.getNume()));
             participanti.setItems(lst);
         });
 
@@ -96,8 +93,12 @@ public class UserView {
         VarstaMaxColumn.setCellValueFactory(f -> new SimpleObjectProperty<>(f.getValue().getVarstaMax()));
 
         concursuri.getColumns().clear();
-        concursuri.getColumns().addAll(IdColumn, ProbaColumn, VarstaMinColumn, VarstaMaxColumn);
-        List<Concurs> conc = concursRepo.getAll();
+        concursuri.getColumns().add(IdColumn);
+        concursuri.getColumns().add(ProbaColumn);
+        concursuri.getColumns().add(VarstaMinColumn);
+        concursuri.getColumns().add(VarstaMaxColumn);
+
+        List<Concurs> conc = concursService.getAll();
         conc.forEach((c) -> System.out.println(c.getId() + "|" + c.getProba()));
         ObservableList<Concurs> lst = FXCollections.observableArrayList();
         lst.addAll(conc);
@@ -112,7 +113,9 @@ public class UserView {
         TableColumn<Participant, Integer> partVarsta = new TableColumn<>("Varsta");
         partVarsta.setCellValueFactory(f -> new SimpleObjectProperty<>(f.getValue().getVarsta()));
         participanti.getColumns().clear();
-        participanti.getColumns().addAll(partId, partNume, partVarsta);
+        participanti.getColumns().add(partId);
+        participanti.getColumns().add(partNume);
+        participanti.getColumns().add(partVarsta);
 
         TableColumn<Participant, Long> partId2 = new TableColumn<>("id");
         partId2.setCellValueFactory(f -> new SimpleObjectProperty<>(f.getValue().getId()));
@@ -124,9 +127,11 @@ public class UserView {
         partVarsta2.setCellValueFactory(f -> new SimpleObjectProperty<>(f.getValue().getVarsta()));
 
         totiParticipanti.getColumns().clear();
-        totiParticipanti.getColumns().addAll(partId2, partNume2, partVarsta2);
+        totiParticipanti.getColumns().add(partId2);
+        totiParticipanti.getColumns().add(partNume2);
+        totiParticipanti.getColumns().add(partVarsta2);
 
-        List<Participant> part = participantRepo.getAll();
+        List<Participant> part = participantService.getAll();
         ObservableList<Participant> parts = FXCollections.observableArrayList();
         parts.addAll(part);
         totiParticipanti.setItems(parts);
@@ -138,7 +143,7 @@ public class UserView {
         Concurs c = concursuri.getSelectionModel().selectedItemProperty().get();
         Participant p = totiParticipanti.getSelectionModel().selectedItemProperty().get();
 
-        concursRepo.Enroll(p.getId(), c.getId());
+        concursService.Enroll(p.getId(), c.getId());
     }
 
     public void RegisterClicked(){
@@ -146,7 +151,7 @@ public class UserView {
         int varsta =Integer.parseInt(varstaText.getText());
 
         Participant p = new Participant(0L, varsta, nume, new LinkedList<>());
-        participantRepo.add(p);
+        participantService.add(p);
 
         reloadListViews();
     }

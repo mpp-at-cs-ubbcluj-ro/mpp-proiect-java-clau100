@@ -1181,3 +1181,82 @@
 30 Mar 2024 22:57:44,054 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7e53054)
 30 Mar 2024 22:57:44,055 TRACE org.example.mpp_ui.Repository.ParticipantRepo 40 getAll - Exit
 30 Mar 2024 22:57:44,056 TRACE org.example.mpp_ui.UserView 134 reloadListViews - Exit
+01 Apr 2024 14:19:08,097 INFO  org.example.mpp_ui.Repository.UserRepo 21 <init> - Initializing new UserRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+01 Apr 2024 14:19:13,829 TRACE org.example.mpp_ui.LoginView 35 onLoginButtonClick - Enter
+01 Apr 2024 14:19:13,830 TRACE org.example.mpp_ui.Repository.UserRepo 83 CheckUser - Enter
+01 Apr 2024 14:19:13,831 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+01 Apr 2024 14:19:13,831 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+01 Apr 2024 14:19:13,832 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+01 Apr 2024 14:19:14,059 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2012459a)
+01 Apr 2024 14:19:14,362 INFO  org.example.mpp_ui.Repository.UserRepo 86 CheckUser - ubb123|$31$16$y1wLzTbQz1RbhFw-whcHDYlphkJc5Deo8FmpUEFgMZk
+01 Apr 2024 14:19:14,501 TRACE org.example.mpp_ui.Repository.UserRepo 94 CheckUser - Exit
+01 Apr 2024 14:19:14,502 TRACE org.example.mpp_ui.LoginView 42 onLoginButtonClick - Exit
+01 Apr 2024 14:19:14,571 INFO  org.example.mpp_ui.Repository.ConcursRepo 18 <init> - Initializing new ConcursRepo with properties: {jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+01 Apr 2024 14:19:14,574 INFO  org.example.mpp_ui.Repository.ParticipantRepo 20 <init> - Initializing new ParticipantRepo with properties :{jdbc.url=jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite}
+01 Apr 2024 14:19:14,575 TRACE org.example.mpp_ui.UserView 86 reloadListViews - Enter
+01 Apr 2024 14:19:14,591 TRACE org.example.mpp_ui.Repository.ConcursRepo 23 getAll - Enter
+01 Apr 2024 14:19:14,592 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+01 Apr 2024 14:19:14,592 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+01 Apr 2024 14:19:14,593 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+01 Apr 2024 14:19:14,597 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@15985507)
+01 Apr 2024 14:19:14,605 INFO  org.example.mpp_ui.Repository.ConcursRepo 38 getAll - Found new concurs with id=1
+01 Apr 2024 14:19:14,607 INFO  org.example.mpp_ui.Repository.ConcursRepo 46 getAll - Found new participant for concurs with id=1
+01 Apr 2024 14:19:14,607 INFO  org.example.mpp_ui.Repository.ConcursRepo 38 getAll - Found new concurs with id=2
+01 Apr 2024 14:19:14,608 INFO  org.example.mpp_ui.Repository.ConcursRepo 38 getAll - Found new concurs with id=3
+01 Apr 2024 14:19:14,608 TRACE org.example.mpp_ui.Repository.ConcursRepo 57 getAll - Exit
+01 Apr 2024 14:19:14,613 TRACE org.example.mpp_ui.Repository.ParticipantRepo 25 getAll - Enter
+01 Apr 2024 14:19:14,613 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+01 Apr 2024 14:19:14,614 TRACE org.example.mpp_ui.Repository.JDBCUtils 19 getNewConnection - Enter
+01 Apr 2024 14:19:14,614 INFO  org.example.mpp_ui.Repository.JDBCUtils 22 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/user/Downloads/mpp-proiect-java-clau100/MPP_ProjectJava/DB.sqlite
+01 Apr 2024 14:19:14,616 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4d2b792d)
+01 Apr 2024 14:19:14,618 TRACE org.example.mpp_ui.Repository.ParticipantRepo 40 getAll - Exit
+01 Apr 2024 14:19:14,618 TRACE org.example.mpp_ui.UserView 135 reloadListViews - Exit
+01 Apr 2024 14:19:17,443 TRACE org.example.mpp_ui.Repository.ConcursRepo 63 find - Enter
+01 Apr 2024 14:19:17,444 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+01 Apr 2024 14:19:17,444 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@15985507)
+01 Apr 2024 14:19:17,445 TRACE org.example.mpp_ui.Repository.ConcursRepo 81 find - Exit
+01 Apr 2024 14:19:17,446 TRACE org.example.mpp_ui.Repository.ParticipantRepo 96 FindAllFromList - Enter
+01 Apr 2024 14:19:17,447 INFO  org.example.mpp_ui.Repository.ParticipantRepo 99 lambda$FindAllFromList$0 - Trying to find Participant with id=1
+01 Apr 2024 14:19:17,448 TRACE org.example.mpp_ui.Repository.ParticipantRepo 46 find - Enter
+01 Apr 2024 14:19:17,448 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+01 Apr 2024 14:19:17,448 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4d2b792d)
+01 Apr 2024 14:19:17,449 TRACE org.example.mpp_ui.Repository.ParticipantRepo 54 find - Exit
+01 Apr 2024 14:19:17,450 INFO  org.example.mpp_ui.Repository.ParticipantRepo 99 lambda$FindAllFromList$0 - Trying to find Participant with id=2
+01 Apr 2024 14:19:17,451 TRACE org.example.mpp_ui.Repository.ParticipantRepo 46 find - Enter
+01 Apr 2024 14:19:17,451 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+01 Apr 2024 14:19:17,452 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4d2b792d)
+01 Apr 2024 14:19:17,454 TRACE org.example.mpp_ui.Repository.ParticipantRepo 54 find - Exit
+01 Apr 2024 14:19:17,454 TRACE org.example.mpp_ui.Repository.ParticipantRepo 103 FindAllFromList - Exit
+01 Apr 2024 14:19:18,204 TRACE org.example.mpp_ui.Repository.ConcursRepo 63 find - Enter
+01 Apr 2024 14:19:18,204 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+01 Apr 2024 14:19:18,205 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@15985507)
+01 Apr 2024 14:19:18,206 TRACE org.example.mpp_ui.Repository.ConcursRepo 81 find - Exit
+01 Apr 2024 14:19:18,207 TRACE org.example.mpp_ui.Repository.ParticipantRepo 96 FindAllFromList - Enter
+01 Apr 2024 14:19:18,207 INFO  org.example.mpp_ui.Repository.ParticipantRepo 99 lambda$FindAllFromList$0 - Trying to find Participant with id=0
+01 Apr 2024 14:19:18,207 TRACE org.example.mpp_ui.Repository.ParticipantRepo 46 find - Enter
+01 Apr 2024 14:19:18,208 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+01 Apr 2024 14:19:18,208 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4d2b792d)
+01 Apr 2024 14:19:18,210 WARN  org.example.mpp_ui.Repository.ParticipantRepo 61 find - No Participant found with id=0
+01 Apr 2024 14:19:18,211 TRACE org.example.mpp_ui.Repository.ParticipantRepo 103 FindAllFromList - Exit
+01 Apr 2024 14:19:18,889 TRACE org.example.mpp_ui.Repository.ConcursRepo 63 find - Enter
+01 Apr 2024 14:19:18,889 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+01 Apr 2024 14:19:18,890 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@15985507)
+01 Apr 2024 14:19:18,891 TRACE org.example.mpp_ui.Repository.ConcursRepo 81 find - Exit
+01 Apr 2024 14:19:18,892 TRACE org.example.mpp_ui.Repository.ParticipantRepo 96 FindAllFromList - Enter
+01 Apr 2024 14:19:18,892 INFO  org.example.mpp_ui.Repository.ParticipantRepo 99 lambda$FindAllFromList$0 - Trying to find Participant with id=0
+01 Apr 2024 14:19:18,892 TRACE org.example.mpp_ui.Repository.ParticipantRepo 46 find - Enter
+01 Apr 2024 14:19:18,893 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+01 Apr 2024 14:19:18,893 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4d2b792d)
+01 Apr 2024 14:19:18,894 WARN  org.example.mpp_ui.Repository.ParticipantRepo 61 find - No Participant found with id=0
+01 Apr 2024 14:19:18,894 TRACE org.example.mpp_ui.Repository.ParticipantRepo 103 FindAllFromList - Exit
+01 Apr 2024 14:19:20,753 TRACE org.example.mpp_ui.Repository.ConcursRepo 63 find - Enter
+01 Apr 2024 14:19:20,754 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+01 Apr 2024 14:19:20,754 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@15985507)
+01 Apr 2024 14:19:20,755 TRACE org.example.mpp_ui.Repository.ConcursRepo 81 find - Exit
+01 Apr 2024 14:19:20,756 TRACE org.example.mpp_ui.Repository.ParticipantRepo 96 FindAllFromList - Enter
+01 Apr 2024 14:19:20,757 INFO  org.example.mpp_ui.Repository.ParticipantRepo 99 lambda$FindAllFromList$0 - Trying to find Participant with id=0
+01 Apr 2024 14:19:20,757 TRACE org.example.mpp_ui.Repository.ParticipantRepo 46 find - Enter
+01 Apr 2024 14:19:20,757 TRACE org.example.mpp_ui.Repository.JDBCUtils 31 getConnection - Enter
+01 Apr 2024 14:19:20,758 TRACE org.example.mpp_ui.Repository.JDBCUtils 39 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4d2b792d)
+01 Apr 2024 14:19:20,758 WARN  org.example.mpp_ui.Repository.ParticipantRepo 61 find - No Participant found with id=0
+01 Apr 2024 14:19:20,759 TRACE org.example.mpp_ui.Repository.ParticipantRepo 103 FindAllFromList - Exit

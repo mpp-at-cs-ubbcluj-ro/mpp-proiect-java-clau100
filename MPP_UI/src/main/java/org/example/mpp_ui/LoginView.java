@@ -8,14 +8,14 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.mpp_ui.Repository.UserRepo;
+import org.example.mpp_ui.Service.UserService;
 
 import java.io.IOException;
 import java.util.Properties;
 
 public class LoginView {
     private static final Logger logger = LogManager.getLogger();
-    private UserRepo users;
+    private UserService users;
     public void initialize(){
         Properties props=new Properties();
         try {
@@ -23,7 +23,7 @@ public class LoginView {
         } catch (IOException e) {
             System.out.println("Cannot find bd.config "+e);
         }
-        users = new UserRepo(props);
+        users = new UserService(props);
     }
 
     @FXML
